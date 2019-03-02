@@ -1,0 +1,125 @@
+/*-----------------------------------------------------------*/
+/* This is the "border-box hack" providing intuitive control */
+/* over the height and width of elements on the screen.      */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*-----------------------------------------------------------*/
+/* We want the page to be green and our game board centered. */
+/*-----------------------------------------------------------*/
+body {
+  background-color:green;
+}
+
+body > div {
+  text-align: center;
+}
+
+/*-----------------------------------------------------------*/
+/* Every game tile should be 50px by 50px and sitting next   */
+/* one another.                                              */
+/*-----------------------------------------------------------*/
+.tile {
+  /* Set the dimensions of each tile. */
+  width: 50px;
+  height: 50px;
+
+  /* Make them sit snugly together */
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/*-----------------------------------------------------------*/
+/* Pacman will encounter walls            */
+/* Pacman can't move through walls       */
+/*-----------------------------------------------------------*/
+
+/* Walls are blue with an off-blue border. */
+.wall {
+  background-color: blue;
+  border: 2px solid cornflowerblue;
+}
+
+/* grounds are black */
+.ground {
+  background-color: black;
+}
+
+/*-----------------------------------------------------------*/
+/* We make pacman appear to face different directions by     */
+/* using different background images based on class name.    */
+/*-----------------------------------------------------------*/
+.east {
+  /* Image urls are relative to the stylesheet.      */
+  /* The '../images' means: "go to the parent folder */
+  /* then look inside the images folder.             */
+  background-image: url('../images/pacman-east.png');
+}
+
+.west {
+  background-image: url('../images/pacman-west.png');
+}
+
+.north {
+  background-image: url('../images/pacman-north.png');
+}
+
+.south {
+  background-image: url('../images/pacman-south.png');
+}
+
+h1{
+    text-align: center;
+    margin: inherit;
+}
+
+h2{
+    text-align: center;
+    margin: inherit;
+}
+
+h3{
+    text-align: center;
+    margin: inherit;
+}
+
+h4{
+    text-align: center;
+    margin: inherit;
+}
+
+p{
+   text-align: center; 
+   margin: inherit;
+}
+
+#mixBut {
+  background-color: #4CAF50;
+    text-align: center;
+}
+
+#leftBut {
+  background-color: mediumpurple;
+    text-align: center;
+}
+
+#rightBut {
+  background-color: fuchsia;
+    text-align: center;
+}
+
+#moveBut {
+  background-color: greenyellow;
+    text-align: center;
+}
+#reportBut {
+  background-color: orangered;
+    text-align: center;
+}

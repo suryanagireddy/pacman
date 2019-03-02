@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Pacman </title>
+  <!-- link tags tell the browser to use our own custom CSS. -->
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  
+</head>
+<body>
+    <h3> Pacman </h3>
+    <p>MOVE(Move button/Up arrow) - Will move Pacman one unit forward in the direction it is currently facing. <br/>
+       LEFT(Left Button/Left arrow) and RIGHT(Right Button/Right Arrow) will rotate Pacman 90 degrees in the specified direction without changing the position of Pacman.<br/>
+       Place - Click to start the challenge, Report will announce the X,Y and F of Pacman.
+       </p>
+
+       <div style="text-align:center;">
+           <input type="button" id="mixBut" value="Place" />
+       </div>
+       <br/>
+       <div style="text-align:center;">
+           <input type="button" id="moveBut" value="Move" disabled="true" />
+           <input type="button" id="leftBut" value="Left" disabled="true"/>
+           <input type="button" id="rightBut" value="Right" disabled="true"/>
+       </div>
+       <br/>
+       <div style="text-align:center;">
+           <input type="button" id="reportBut" value="Report" disabled="true"/>
+           <h4> Place: <span id="xcordinate"></span>, <span id="ycordinate"></span>, <span id="pacdirection"></span> </h4>
+        </div>
+		
+		<!-- The script tag loads our JavaScript file. -->
+		<script src="scripts/main.js"></script>
+</body>
+</html>
